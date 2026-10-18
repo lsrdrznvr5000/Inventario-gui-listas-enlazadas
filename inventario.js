@@ -1,4 +1,4 @@
-class NodoProducto {
+class posicionesDeProducto {
     constructor(producto) {
         this.producto = producto;
         this.anterior = null;
@@ -30,7 +30,7 @@ class Inventario {
             actual = actual.siguiente;
         }
 
-        const nuevo = new NodoProducto(producto);
+        const nuevo = new posicionesDeProducto(producto);
         nuevo.anterior = anterior;
         nuevo.siguiente = actual;
 
